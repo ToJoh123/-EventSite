@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) {
+  header {
+    color: red;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  & {
+    body {
+      font-family: "Poppins", sans-serif;
+      & header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      & div {
+        display: flex;
+
+        & nav {
+          border: 1px solid black;
+          position: relative;
+          width: 10rem;
+          height: 100vh;
+          & ul {
+            position: fixed;
+
+            & li {
+              list-style: none;
+              & a {
+                text-decoration: none;
+                color: black;
+                display: block;
+                padding: 1rem;
+                &:hover {
+                  color: #b61d1d;
+                }
+              }
+            }
+          }
+        }
+
+        & main {
+          margin-left: 10rem;
+
+          & .main-big-box {
+            //this code will center the content
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            background-color: rgb(145, 145, 131);
+          }
+          & .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 1rem;
+            & article {
+              border: 1px solid black;
+              & img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          & .detailed-article {
+            & h1 {
+              font-size: xx-large;
+            }
+            & table {
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+              border-collapse: collapse;
+              & th {
+                border: 1px solid black;
+                padding: 1rem;
+              }
+              & td {
+                border: 1px solid black;
+                padding: 1rem;
+              }
+            }
+          }
+          & .detailed-images {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+      }
+    }
+  }
+}

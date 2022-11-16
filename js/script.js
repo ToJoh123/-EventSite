@@ -252,65 +252,44 @@ this function will display the data in the events array using the template above
 //   });
 // }
 
-// displayEvents();
-// this function will display the data in the events array using the template above to display the data in the html using javascript
+var obj = [
+  {
+    key: "apple",
+    value: 1.9,
+  },
+  {
+    key: "berry",
+    value: 1.7,
+  },
+  {
+    key: "banana",
+    value: 1.5,
+  },
+  {
+    key: "cherry",
+    value: 1.2,
+  },
+];
+var globalCounter = 0;
+var tbody = document.getElementById("tbody");
+for (var i = 0; i < Object.keys(obj).length; i++) {
+  var tr = "<tr>";
+  if (
+    obj[i].value
+      .toString()
+      .substring(
+        obj[i].value.toString().indexOf("."),
+        obj[i].value.toString().length
+      ) < 2
+  )
+    obj[i].value += "0";
 
-function displayEvents2() {
-  const eventSection = document.getElementById("events");
-  events.forEach((event) => {
-    const eventDiv = document.createElement("div");
-    const eventImg = document.createElement("img");
-    eventImg.src = event.image;
-    const eventArticle = document.createElement("article");
-    const eventTable = document.createElement("table");
-    const nameRow = document.createElement("tr");
-    const nameHeader = document.createElement("th");
-    nameHeader.innerText = "Name";
-    const nameData = document.createElement("td");
-    nameData.innerText = event.name;
-    nameRow.appendChild(nameHeader);
-    nameRow.appendChild(nameData);
-    const dateRow = document.createElement("tr");
-    const dateHeader = document.createElement("th");
-    dateHeader.innerText = "Date";
-    const dateData = document.createElement("td");
-    dateData.innerText = event.date;
-    dateRow.appendChild(dateHeader);
-    dateRow.appendChild(dateData);
-    const shortDescRow = document.createElement("tr");
-    const shortDescHeader = document.createElement("th");
-    shortDescHeader.innerText = "Short description";
-    const shortDescData = document.createElement("td");
-    shortDescData.innerText = event.short_desc;
-    shortDescRow.appendChild(shortDescHeader);
-    shortDescRow.appendChild(shortDescData);
-    const categoryRow = document.createElement("tr");
-    const categoryHeader = document.createElement("th");
-    categoryHeader.innerText = "Category";
-    const categoryData = document.createElement("td");
-    categoryData.innerText = event.category;
-    categoryRow.appendChild(categoryHeader);
-    categoryRow.appendChild(categoryData);
-    const linkRow = document.createElement("tr");
-    const linkHeader = document.createElement("th");
-    linkHeader.innerText = "Link";
-    const linkData = document.createElement("td");
-    const link = document.createElement("a");
-    link.href = event.link;
-    link.innerText = "Länk";
-    linkData.appendChild(link);
-    linkRow.appendChild(linkHeader);
-    linkRow.appendChild(linkData);
-    eventTable.appendChild(nameRow);
-    eventTable.appendChild(dateRow);
-    eventTable.appendChild(shortDescRow);
-    eventTable.appendChild(categoryRow);
-    eventTable.appendChild(linkRow);
-    eventArticle.appendChild(eventTable);
-    eventDiv.appendChild(eventImg);
-    eventDiv.appendChild(eventArticle);
-    eventSection.appendChild(eventDiv);
-  });
+  tr +=
+    "<td>" +
+    obj[i].key +
+    "</td>" +
+    "<td>$" +
+    obj[i].value.toString() +
+    "</td></tr>";
+  tbody.innerHTML += tr;
 }
-
-displayEvents2();
