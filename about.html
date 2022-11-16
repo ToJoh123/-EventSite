@@ -29,32 +29,61 @@
       </nav>
 
       <main>
-        <section class="detailed-article">
-          <h1>Name</h1>
+        <h1>About us</h1>
+        <article>
+          <h2>Rubrik1</h2>
+          <p>paragraf</p>
+          <h2>Rubrik2</h2>
+          <p>paragraf</p>
+        </article>
+
+        <section id="vd">
+          <img src="https://picsum.photos/400/200" alt="" />
           <table>
             <tr>
-              <th>Datum</th>
-              <td>1 January</td>
+              <th>VD</th>
+              <td>någon nåntingsson</td>
             </tr>
             <tr>
-              <th>Short description</th>
-              <td><a href="#short-desc">Avaible</a></td>
+              <th>Telefonnummer</th>
+              <td>någon nåntingsson</td>
             </tr>
             <tr>
-              <th>Timetable</th>
-              <td>.</td>
-            </tr>
-            <tr>
-              <th>Category</th>
-              <td>.</td>
+              <th>Email</th>
+              <td>någon@email.net</td>
             </tr>
           </table>
         </section>
-        <section class="detailed-images">
-          <img src="https://picsum.photos/200/200" alt="" />
-          <img src="https://picsum.photos/200/200" alt="" />
-          <img src="https://picsum.photos/200/200" alt="" />
-          <img src="https://picsum.photos/200/200" alt="" />
+
+        <section>
+          <h2>Our team</h2>
+
+          <div id="team">
+            <img src="https://picsum.photos/1200/200" alt="picture on team" />
+          </div>
+        </section>
+
+        <section>
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name" />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+            ></textarea>
+            <input type="submit" value="Send" />
+          </form>
         </section>
       </main>
     </div>

@@ -4,27 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    /> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>🤡My event Site</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Lists of events</a></li>
-        <li><a href="create_event.html">Create event</a></li>
-      </ul>
-    </nav>
     <header><h1>Rubrik</h1></header>
-    <main>
-      <section id="main-header">
-        <img src="https://picsum.photos/1200/200" alt="rando pico" />
-      </section>
-      <section id="events">
-        <div id="event-1">
-          <img src="https://picsum.photos/200/200" alt="" />
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Lists of events</a></li>
+          <li><a href="create_event.html">Create event</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="details.html">Details</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section class="main-big-box">
+          <img src="https://picsum.photos/600/300" alt="" />
+        </section>
+        <section class="articles">
           <article>
+            <img src="https://picsum.photos/200/200" alt="" />
             <!-- table with name, date, short description, category,link to event -->
             <table>
               <tr>
@@ -49,11 +59,58 @@
               </tr>
             </table>
           </article>
-        </div>
-        <!-- end of event-1 -->
-        <div id="event-2">
-          <img src="https://picsum.photos/200/200" alt="" />
           <article>
+            <img src="https://picsum.photos/400/200" alt="" width="200px" />
+            <!-- table with name, date, short description, category,link to event -->
+            <table>
+              <tr>
+                <th>Name</th>
+                <td>Eventet</td>
+              </tr>
+              <tr>
+                <th>Datum</th>
+                <td>1 January</td>
+              </tr>
+              <tr>
+                <th colspan="2"><button>Short description</button></th>
+              </tr>
+              <tr>
+                <th>Category</th>
+                <td>Afterwork</td>
+              </tr>
+              <tr>
+                <th>Link</th>
+                <td><a href="">Länk</a></td>
+              </tr>
+            </table>
+          </article>
+          <article>
+            <img src="https://picsum.photos/600/200" alt="" />
+            <!-- table with name, date, short description, category,link to event -->
+            <table>
+              <tr>
+                <th>Name</th>
+                <td>Eventet</td>
+              </tr>
+              <tr>
+                <th>Datum</th>
+                <td>1 January</td>
+              </tr>
+              <tr>
+                <th colspan="2">Short description</th>
+              </tr>
+              <tr>
+                <th>Category</th>
+                <td>Afterwork</td>
+              </tr>
+              <tr>
+                <th>Link</th>
+                <td><a href="">Länk</a></td>
+              </tr>
+            </table>
+          </article>
+          <article>
+            <img src="https://picsum.photos/200/200" alt="" />
             <!-- table with name, date, short description, category,link to event -->
             <table>
               <tr>
@@ -78,11 +135,8 @@
               </tr>
             </table>
           </article>
-        </div>
-        <!-- end of event-2 -->
-        <div id="event-3">
-          <img src="https://picsum.photos/200/200" alt="" />
           <article>
+            <img src="https://picsum.photos/200/200" alt="" />
             <!-- table with name, date, short description, category,link to event -->
             <table>
               <tr>
@@ -107,11 +161,9 @@
               </tr>
             </table>
           </article>
-        </div>
-        <!-- end of event-3 -->
-        <div id="event-4">
-          <img src="https://picsum.photos/200/200" alt="" />
+
           <article>
+            <img src="https://picsum.photos/200/200" alt="" />
             <!-- table with name, date, short description, category,link to event -->
             <table>
               <tr>
@@ -136,76 +188,14 @@
               </tr>
             </table>
           </article>
-        </div>
-        <!-- end of event-4 -->
-        <div id="event-5">
-          <img src="https://picsum.photos/200/200" alt="" />
-          <article>
-            <!-- table with name, date, short description, category,link to event -->
-            <table>
-              <tr>
-                <th>Name</th>
-                <td>Eventet</td>
-              </tr>
-              <tr>
-                <th>Datum</th>
-                <td>1 January</td>
-              </tr>
-              <tr>
-                <th>Short description</th>
-                <td>Detta är ett event</td>
-              </tr>
-              <tr>
-                <th>Category</th>
-                <td>Afterwork</td>
-              </tr>
-              <tr>
-                <th>Link</th>
-                <td><a href="">Länk</a></td>
-              </tr>
-            </table>
-          </article>
-        </div>
-        <!-- end of event-5 -->
-        <div id="event-6">
-          <img src="https://picsum.photos/200/200" alt="" />
-          <article>
-            <!-- table with name, date, short description, category,link to event -->
-            <table>
-              <tr>
-                <th>Name</th>
-                <td>Eventet</td>
-              </tr>
-              <tr>
-                <th>Datum</th>
-                <td>1 January</td>
-              </tr>
-              <tr>
-                <th>Short description</th>
-                <td>Detta är ett event</td>
-              </tr>
-              <tr>
-                <th>Category</th>
-                <td>Afterwork</td>
-              </tr>
-              <tr>
-                <th>Link</th>
-                <td><a href="">Länk</a></td>
-              </tr>
-            </table>
-          </article>
-        </div>
-        <!-- end of event-6 -->
-      </section>
-    </main>
-    <table>
-      <tbody id="tbody"></tbody>
-    </table>
-    <script src="js/script.js"></script>
-    <script
+        </section>
+      </main>
+    </div>
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </body>
 </html>
