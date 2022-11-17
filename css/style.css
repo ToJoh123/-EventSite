@@ -43,12 +43,16 @@
 * body div main {
   margin-left: 10rem;
 }
-* body div main .main-big-box {
+* body div main .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  background-color: rgb(145, 145, 131);
+  padding-top: 1rem;
+}
+* body div main .hero img {
+  width: 75rem;
+  height: 18.5rem;
+  background-size: cover;
 }
 * body div main .articles {
   margin-top: 2rem;
@@ -58,8 +62,9 @@
   grid-gap: 1rem;
 }
 * body div main .articles article img {
-  max-width: 200px;
-  max-height: 300px;
+  width: 18.5rem;
+  height: 12.5rem;
+  background-size: cover;
 }
 * body div main .articles article table {
   text-align: left;
