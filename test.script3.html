@@ -5,31 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style></style>
     <title>Document</title>
   </head>
   <body>
-    <table>
-      <tr>
-        <th>Name</th>
-        <td>Eventet</td>
-      </tr>
-      <tr>
-        <th>Datum</th>
-        <td>1 January</td>
-      </tr>
-      <tr>
-        <th>Short description</th>
-        <td>Detta är ett event</td>
-      </tr>
-      <tr>
-        <th>Category</th>
-        <td>Afterwork</td>
-      </tr>
-      <tr>
-        <th>Link</th>
-        <td><a href="">Länk</a></td>
-      </tr>
-    </table>
     <div id="events"></div>
     <div id="output"></div>
     <div class="card"></div>
@@ -143,78 +122,20 @@
           image: "https://picsum.photos/200",
         },
       ];
-      //this code is to print out a value from array
-      console.log(events[0].name);
-      //this code is to target a div
-      const elOutput = document.querySelector("#output");
-      //this code is to print out a value from array
-      //   elOutput.textContent = events[0].name;
 
-      //this is arrow function to target a div using a parameter
-      let get = (name) => {
-        return document.getElementById(name);
-      };
-      get("output").textContent = events[0].name;
-
-      //this function will create a table
-      //   <table>
-      //   <tr>
-      //     <th>Name</th>
-      //     <td>Eventet</td>
-      //   </tr>
-      // </table>
-
-      function createTable(parameter) {
-        let table = document.createElement("table");
-        let tr = document.createElement("tr");
-        let th = document.createElement("th");
-        let td = document.createElement("td");
-        let text = document.createTextNode(parameter);
-        th.appendChild(text);
-        tr.appendChild(th);
-        table.appendChild(tr);
-        return table;
-      }
-      //call function
-      get("output").appendChild(createTable("name"));
-
-      //this function will add  text to the table
-      function addTextToTable(text) {
-        let td = document.createElement("td");
-        let textNode = document.createTextNode(text);
-        td.appendChild(textNode);
-        return td;
-      }
-      //call function
-      get("output").appendChild(addTextToTable(events[0].name));
-
-      get("output").appendChild(createTable("date"));
-      get("output").appendChild(addTextToTable(events[0].date));
-
-      get("output").appendChild(createTable("description"));
-      get("output").appendChild(addTextToTable(events[0].short_desc));
-
-      get("output").appendChild(createTable("category"));
-      get("output").appendChild(addTextToTable(events[0].category));
-
-      get("output").appendChild(createTable("link"));
-      get("output").appendChild(addTextToTable(events[0].link));
-
-      get("output").appendChild(createTable("image"));
-      get("output").appendChild(addTextToTable(events[0].image));
-
-      const table = $(`
-
+      function createCardsJquery() {
+        for (let i = 0; i < events.length; i++) {
+          const table = $(`
             <div id="table">
-                <img src="${events[0].image}" alt="image">
+                <img src="${events[i].image}" alt="image">
                       <table class="card">
                         <tr>
                             <th>Name</th>
-                            <td>${events[0].name}</td>
+                            <td>${events[i].name}</td>
                         </tr>
                         <tr>
                             <th>Datum</th>
-                            <td>${events[0].date}</td>
+                            <td>${events[i].date}</td>
                         </tr>
                         <tr>
                             <th>Short description</th>
@@ -222,34 +143,20 @@
                         </tr>
                         <tr>
                             <th>Category</th>
-                            <td>${events[0].category}</td>
+                            <td>${events[i].category}</td>
                         </tr>
                         <tr>
                             <th>Link</th>
-                            <td><a href="${events[0].link}">Länk</a></td>
+                            <td><a href="${events[i].link}">Länk</a></td>
                         </tr>
                       </table>
                 </div>
                   `);
-      $(".card").append(table);
-      //this is to add hover effect to the table
-      table.hover(
-        function () {
-          $(this).css("box-shadow", "10px 10px 5px #888");
-        },
-        function () {
-          $(this).css("box-shadow", "none");
+          $(".card").append(table);
         }
-      );
-      //this is to add click effect to the table
-      table.click(function () {
-        $(this).toggleClass("clicked");
-        if ($(this).hasClass("clicked")) {
-          $(this).css("border", "2px solid black");
-        } else {
-          $(this).css("border", "none");
-        }
-      });
+      }
+
+      createCardsJquery();
     </script>
   </body>
 </html>
