@@ -1,6 +1,33 @@
-@media screen and (max-width: 768px) {
-  header {
+@media screen and (min-width: 320px) {
+  h1 {
     color: red;
+  }
+  h1:before {
+    content: "320px";
+  }
+}
+@media screen and (min-width: 480px) {
+  h1 {
+    color: green;
+  }
+  h1:before {
+    content: "480px";
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    color: blue;
+  }
+  h1:before {
+    content: "768px";
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    color: yellow;
+  }
+  h1:before {
+    content: "1024px";
   }
 }
 * {
@@ -41,6 +68,7 @@
   color: #b61d1d;
 }
 * body div main {
+  border: solid 1px black;
   margin-left: 10rem;
 }
 * body div main .hero {
@@ -53,6 +81,9 @@
   width: 75rem;
   height: 18.5rem;
   background-size: cover;
+}
+* body div main .hero img:hover {
+  opacity: 0.6;
 }
 * body div main .articles {
   margin-top: 2rem;

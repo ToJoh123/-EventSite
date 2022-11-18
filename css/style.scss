@@ -1,6 +1,38 @@
-@media screen and (max-width: 768px) {
-  header {
+//this code will change color of h1 depending of screen seize
+@media screen and (min-width: 320px) {
+  h1 {
     color: red;
+  }
+  //this code will prepend the text with "320px"
+  h1:before {
+    content: "320px";
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    color: green;
+  }
+  h1:before {
+    content: "480px";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    color: blue;
+  }
+  h1:before {
+    content: "768px";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    color: yellow;
+  }
+  h1:before {
+    content: "1024px";
   }
 }
 
@@ -8,108 +40,110 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  & {
-    body {
-      font-family: "Poppins", sans-serif;
-      & header {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem;
-        text-align: center;
+  & body {
+    font-family: "Poppins", sans-serif;
+    & header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    & div {
+      display: flex;
+
+      & nav {
+        position: relative;
+        width: 10rem;
+        height: 100vh;
+        & ul {
+          position: fixed;
+
+          & li {
+            list-style: none;
+            & a {
+              text-decoration: none;
+              color: black;
+              display: block;
+              padding: 1rem;
+              &:hover {
+                color: #b61d1d;
+              }
+            }
+          }
+        }
       }
 
-      & div {
-        display: flex;
+      & main {
+        border: solid 1px black;
+        margin-left: 10rem;
 
-        & nav {
-          position: relative;
-          width: 10rem;
-          height: 100vh;
-          & ul {
-            position: fixed;
+        & .hero {
+          //this code will center the content
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 1rem;
 
-            & li {
-              list-style: none;
-              & a {
-                text-decoration: none;
-                color: black;
-                display: block;
-                padding: 1rem;
-                &:hover {
-                  color: #b61d1d;
+          & img {
+            width: 75rem;
+            height: 18.5rem;
+            background-size: cover;
+          }
+          & img:hover {
+            opacity: 0.6;
+          }
+        }
+        & .articles {
+          margin-top: 2rem;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-gap: 1rem;
+          & article {
+            & img {
+              width: 18.5rem;
+              height: 12.5rem;
+              background-size: cover;
+            }
+            & table {
+              text-align: left;
+              & th {
+                & button {
+                  text-align: center;
+                  font-weight: bold;
+                  border: none;
+                }
+
+                & button:focus {
+                  border: none;
+                  outline: none;
+                }
+
+                & button:focus {
+                  outline: none !important;
                 }
               }
             }
           }
         }
-
-        & main {
-          margin-left: 10rem;
-
-          & .hero {
-            //this code will center the content
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 1rem;
-
-            & img {
-              width: 75rem;
-              height: 18.5rem;
-              background-size: cover;
-            }
+        & .detailed-article {
+          & h1 {
+            font-size: xx-large;
           }
-          & .articles {
-            margin-top: 2rem;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            grid-gap: 1rem;
-            & article {
-              & img {
-                width: 18.5rem;
-                height: 12.5rem;
-                background-size: cover;
-              }
-              & table {
-                text-align: left;
-                & th {
-                  & button {
-                    text-align: center;
-                    font-weight: bold;
-                    border: none;
-                  }
-
-                  & button:focus {
-                    border: none;
-                    outline: none;
-                  }
-
-                  & button:focus {
-                    outline: none !important;
-                  }
-                }
-              }
-            }
+          & table {
+            text-align: left;
           }
-          & .detailed-article {
-            & h1 {
-              font-size: xx-large;
-            }
-            & table {
-              text-align: left;
-            }
-          }
-          & .detailed-images {
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: repeat(4, 1fr);
-          }
-          & form {
-            max-width: 300px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-          }
+        }
+        & .detailed-images {
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: repeat(4, 1fr);
+        }
+        & form {
+          max-width: 300px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
         }
       }
     }
