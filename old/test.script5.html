@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style></style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="events"></div>
+    <table id="tableOne"></table>
+    <table id="tableTwo"></table>
+    <div class="card"></div>
+    <script>
+      $(document).ready(function () {
+        //your code here
+
+        const events = [
+          {
+            name: "Air force jam",
+            date: "1 jan 2020",
+            short_desc:
+              "this party is for short shoes unless you have tall ones.",
+            category: "sneakers",
+            link: "https://www.nike.com/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "blockfeet party",
+            date: "1 jan 2020",
+            short_desc:
+              "this party is for crypto shoes,bring your blockfeetScanner",
+            category: "sneakers",
+            link: "https://www.nike.com/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "Ground force jammed",
+            date: "1 jan 2020",
+            short_desc: "if youre not wearing shoes you cant come",
+            category: "shoeless",
+            link: "https://sv.wikipedia.org/wiki/Tr%C3%A4sk",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "vs code party",
+            date: "1 jan 2020",
+            short_desc: " this event is for all who dont know what shoes are",
+            category: "code",
+            link: "https://www.microsoft.com/sv-se/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "shoelace party",
+            date: "1 jan 2050",
+            short_desc: "this party is for all who have shoelaces",
+            category: "shoelaces",
+            link: "https://yarnpkg.com/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "sole party",
+            date: "1 jan 2040",
+            short_desc: "this party is for all who have soles",
+            category: "soles",
+            link: "https://www.kia.com/se/nya-bilar/e-soul/specifications/",
+            image:
+              "https://www.kia.com/content/dam/kwcms/kme/global/en/assets/vehicles/e-Soul/specfication/kia-e-soul-my19-slide-list-01-w.png",
+          },
+          {
+            name: "javascript party",
+            date: "1 jan 2030",
+            short_desc: "this party is for all who have javascript",
+            category: "javascript",
+            link: "https://www.javascript.com/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "react party",
+            date: "1 jan 2020",
+            short_desc: "this party is for all who have react",
+            category: "react",
+            link: "https://reactjs.org/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "node party",
+            date: "1 jan 2020",
+            short_desc: "this party is for all who have node",
+            category: "node",
+            link: "https://nodejs.org/en/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "express party",
+            date: "1 jan 2020",
+            short_desc: "this party is for all who have express",
+            category: "express",
+            link: "https://expressjs.com/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "mongo party",
+            date: "1 jan 2020",
+            short_desc: "this party is for all who have mongo",
+            category: "mongo",
+            link: "https://www.mongodb.com/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "mongoose party",
+            date: "1 jan 2020",
+            short_desc: "this party is for all who have mongoose",
+            category: "mongoose",
+            link: "https://mongoosejs.com/",
+            image: "https://picsum.photos/200",
+          },
+          {
+            name: "html party",
+            date: "1 jan 2020",
+            short_desc: "this party is for all who have html",
+            category: "html",
+            link: "https://www.w3schools.com/html/",
+            image: "https://picsum.photos/200",
+          },
+        ];
+
+        function createCards() {
+          events.forEach((event) => {
+            //this will increment for every event
+            let i = 0;
+            console.log("number of loops");
+            let table = document.createElement("table");
+            let tr1 = document.createElement("tr");
+            let th1 = document.createElement("th");
+            let td1 = document.createElement("td");
+            th1.textContent = "Name";
+            td1.textContent = event.name;
+            tr1.appendChild(th1);
+            tr1.appendChild(td1);
+
+            let tr2 = document.createElement("tr");
+            let th2 = document.createElement("th");
+            let td2 = document.createElement("td");
+            th2.textContent = "Date";
+            td2.textContent = event.date;
+            tr2.appendChild(th2);
+            tr2.appendChild(td2);
+
+            tableOne.appendChild(tr1);
+            tableTwo.appendChild(tr2);
+          });
+        }
+        createCards();
+      });
+    </script>
+  </body>
+</html>

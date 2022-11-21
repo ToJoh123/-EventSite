@@ -17,6 +17,11 @@
     content: "480px";
   }
 }
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
 
 @media screen and (min-width: 768px) {
   h1 {
@@ -75,7 +80,6 @@
       }
 
       & main {
-        border: solid 1px black;
         margin-left: 10rem;
 
         & .hero {
@@ -101,6 +105,7 @@
           grid-template-rows: repeat(3, 1fr);
           grid-gap: 1rem;
           & article {
+            border: solid 2px white;
             & img {
               width: 18.5rem;
               height: 12.5rem;
@@ -140,10 +145,53 @@
           gap: 1rem;
           grid-template-columns: repeat(4, 1fr);
         }
+
+        //this is for form
         & form {
-          max-width: 300px;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          & input,
+          select,
+          textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+          }
+          & input[type="submit"] {
+            background-color: darkslategrey;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+          }
+          & input[type="submit"]:hover {
+            color: red;
+          }
+          & label {
+            padding: 12px 12px 12px 0;
+          }
+          & .col-13 {
+            width: 13rem;
+            margin-top: 6px;
+          }
+          & .col-10 {
+            width: 10rem;
+            margin-top: 6px;
+          }
+          & .col-30 {
+            width: 30rem;
+            margin-top: 6px;
+          }
+          & .col-100 {
+            width: 80rem;
+            margin-top: 6px;
+          }
+          & .row {
+            display: flex;
+          }
         }
       }
     }

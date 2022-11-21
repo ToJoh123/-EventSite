@@ -14,6 +14,11 @@
     content: "480px";
   }
 }
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 768px) {
   h1 {
     color: blue;
@@ -68,7 +73,6 @@
   color: #b61d1d;
 }
 * body div main {
-  border: solid 1px black;
   margin-left: 10rem;
 }
 * body div main .hero {
@@ -91,6 +95,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
+}
+* body div main .articles article {
+  border: solid 2px white;
 }
 * body div main .articles article img {
   width: 18.5rem;
@@ -123,8 +130,47 @@
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
 }
-* body div main form {
-  max-width: 300px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+* body div main form input,
+* body div main form select,
+* body div main form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+* body div main form input[type=submit] {
+  background-color: darkslategrey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+* body div main form input[type=submit]:hover {
+  color: red;
+}
+* body div main form label {
+  padding: 12px 12px 12px 0;
+}
+* body div main form .col-13 {
+  width: 13rem;
+  margin-top: 6px;
+}
+* body div main form .col-10 {
+  width: 10rem;
+  margin-top: 6px;
+}
+* body div main form .col-30 {
+  width: 30rem;
+  margin-top: 6px;
+}
+* body div main form .col-100 {
+  width: 80rem;
+  margin-top: 6px;
+}
+* body div main form .row {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
