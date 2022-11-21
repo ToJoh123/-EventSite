@@ -188,4 +188,19 @@ $(document).ready(function () {
   }
   hideText();
 });
+$("#thank-you").hide();
+$("#create-event").click(function () {
+  console.log("clicked");
+
+  //this will hide the id event-form-container and replace it with a thank you message
+  $("#create-event-form").hide(1000);
+  $("#thank-you").show(1000);
+
+  // this will uppdate page after 5 seconds
+  setTimeout(function () {
+    location.reload();
+  }, 5000);
+  return false;
+});
+
 //this will code will run when the button is clicked
