@@ -29,33 +29,62 @@
       </nav>
 
       <main>
-        <h1>About us</h1>
+        <section class="about-company">
+        <h2>About us</h2>
         <article>
           <h2>Rubrik1</h2>
           <p>paragraf</p>
           <h2>Rubrik2</h2>
           <p>paragraf</p>
         </article>
+      </section>
+        <section class="about-vd" >
+          <div class="row">
+             <img src="https://picsum.photos/400/200" alt="vd image" id="vd-image"/>
+          <aside>
+            <table>
+                <tr>
+                  <th>VD</th>
+                  <td>Vice director</td>
+                </tr>
+                <tr>
+                  <th>Telefonnummer</th>
+                  <td><a href="tel:+463390510">90510</a></td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td><a href="mailto:johndoe@fakeemail.com">Example mail to link</a></td>
+                </tr>
+            </table>
+            <!-- <ul id="ul-vd">
+              <li>VD</li>
+              <li>Vice director</li>
+              <li>Telefonnummer</li>
+              <li><a href="tel:+463390510">90510</a></li>
+              <li>Email</li>  
+              <li><a href="mailto:johndoe@fakeemail.com">Example mailto link</a></li>
+            </ul> -->
+          </aside>
+          <!-- <ul>
+            <div class="row">
+              <li>VD</li>
+              <li>Vice director</li>
+            </div>
+            <div class="row">
+              <li>Telefonnummer</li>
+              <li><a href="tel:+463390510">90510</a></li>
+            </div>
+            <div class="row">
+              <li>Email</li>
+              <li><a href="mailto:johndoe@fakeemail.com">Example mailto link</a></li>
+            </div> -->
 
-        <section id="vd">
-          <img src="https://picsum.photos/400/200" alt="" />
-          <table>
-            <tr>
-              <th>VD</th>
-              <td>någon nåntingsson</td>
-            </tr>
-            <tr>
-              <th>Telefonnummer</th>
-              <td>någon nåntingsson</td>
-            </tr>
-            <tr>
-              <th>Email</th>
-              <td>någon@email.net</td>
-            </tr>
-          </table>
+         
+          </ul>
+        </div>
         </section>
 
-        <section>
+        <section class="about-team">
           <h2>Our team</h2>
 
           <div id="team">
@@ -63,28 +92,50 @@
           </div>
         </section>
 
-        <section>
-          <form action="">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your name" />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your email"
-            />
+        <section class="contact-us">
+          <div class="container" id="container-message-form">
+          <form id="message-form">
+            <div class="row">
+              <div class="col-10">
+                <label for="name">Name</label>
+              </div>
+            <div class="col-30">
+              <input type="text" name="name" id="name" placeholder="Your name" />
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-30">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
             <label for="message">Message</label>
+          </div>
+          <div class="col-30">
             <textarea
               name="message"
               id="message"
-              cols="30"
-              rows="10"
               placeholder="Your message"
             ></textarea>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-40">
             <input type="submit" value="Send" />
+          </div>
+          </div>
           </form>
         </section>
+      </div>
       </main>
     </div>
     <!-- <script src="js/script.js"></script> -->

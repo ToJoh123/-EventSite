@@ -130,9 +130,36 @@
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
 }
-* body div main form input,
-* body div main form select,
-* body div main form textarea {
+* body div main .about-company {
+  margin-top: 2rem;
+  border: solid 2px black;
+}
+* body div main .about-vd {
+  padding-top: 2rem;
+}
+* body div main .about-vd #vd-image {
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.897);
+  transition: 0.3s;
+}
+* body div main .about-vd aside {
+  margin-left: 2rem;
+}
+* body div main .about-vd aside table tr td {
+  padding-left: 2rem;
+}
+* body div main .about-team {
+  margin-top: 2rem;
+}
+* body div main .contact-us form,
+* body div main .create-section form {
+  margin-top: 2rem;
+}
+* body div main .contact-us form input,
+* body div main .contact-us form select,
+* body div main .contact-us form textarea,
+* body div main .create-section form input,
+* body div main .create-section form select,
+* body div main .create-section form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -140,7 +167,8 @@
   box-sizing: border-box;
   resize: vertical;
 }
-* body div main form input[type=submit] {
+* body div main .contact-us form input[type=submit],
+* body div main .create-section form input[type=submit] {
   background-color: darkslategrey;
   color: white;
   padding: 12px 20px;
@@ -149,28 +177,50 @@
   cursor: pointer;
   float: right;
 }
-* body div main form input[type=submit]:hover {
+* body div main .contact-us form input[type=submit]:hover,
+* body div main .create-section form input[type=submit]:hover {
   color: red;
 }
-* body div main form label {
+* body div main .contact-us form label,
+* body div main .create-section form label {
   padding: 12px 12px 12px 0;
 }
-* body div main form .col-13 {
+* body div main .contact-us form .col-13,
+* body div main .create-section form .col-13 {
   width: 13rem;
   margin-top: 6px;
 }
-* body div main form .col-10 {
+* body div main .contact-us form .col-10,
+* body div main .create-section form .col-10 {
   width: 10rem;
   margin-top: 6px;
 }
-* body div main form .col-30 {
+* body div main .contact-us form .col-30,
+* body div main .create-section form .col-30 {
   width: 30rem;
   margin-top: 6px;
 }
-* body div main form .col-100 {
-  width: 80rem;
+* body div main .contact-us form .col-40,
+* body div main .create-section form .col-40 {
+  width: 40rem;
   margin-top: 6px;
 }
-* body div main form .row {
+* body div main .contact-us form .row,
+* body div main .create-section form .row {
   display: flex;
+}
+
+#container-message-form {
+  position: relative;
+}
+#container-message-form #message-form {
+  position: absolute;
+  top: 0;
+  left: 5rem;
+}
+
+#vd-image {
+  width: 18.5rem;
+  height: 12.5rem;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

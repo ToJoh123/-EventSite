@@ -145,55 +145,100 @@
           gap: 1rem;
           grid-template-columns: repeat(4, 1fr);
         }
+        & .about-company {
+          margin-top: 2rem;
+          border: solid 2px black;
+        }
+        & .about-vd {
+          padding-top: 2rem;
+          & #vd-image {
+            box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.897);
+            transition: 0.3s;
+          }
+          aside {
+            margin-left: 2rem;
+            & table {
+              & tr {
+                & td {
+                  padding-left: 2rem;
+                }
+              }
+            }
+          }
+        }
 
-        //this is for form
-        & form {
-          & input,
-          select,
-          textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            resize: vertical;
+        & .about-team {
+          margin-top: 2rem;
+        }
+        //this is for form  page about and create_event get their styling from here
+        & .contact-us,
+        .create-section {
+          & form {
+            margin-top: 2rem;
           }
-          & input[type="submit"] {
-            background-color: darkslategrey;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-          }
-          & input[type="submit"]:hover {
-            color: red;
-          }
-          & label {
-            padding: 12px 12px 12px 0;
-          }
-          & .col-13 {
-            width: 13rem;
-            margin-top: 6px;
-          }
-          & .col-10 {
-            width: 10rem;
-            margin-top: 6px;
-          }
-          & .col-30 {
-            width: 30rem;
-            margin-top: 6px;
-          }
-          & .col-100 {
-            width: 80rem;
-            margin-top: 6px;
-          }
-          & .row {
-            display: flex;
+          & form {
+            & input,
+            select,
+            textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              resize: vertical;
+            }
+            & input[type="submit"] {
+              background-color: darkslategrey;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+            & input[type="submit"]:hover {
+              color: red;
+            }
+            & label {
+              padding: 12px 12px 12px 0;
+            }
+            & .col-13 {
+              width: 13rem;
+              margin-top: 6px;
+            }
+            & .col-10 {
+              width: 10rem;
+              margin-top: 6px;
+            }
+            & .col-30 {
+              width: 30rem;
+              margin-top: 6px;
+            }
+            & .col-40 {
+              width: 40rem;
+              margin-top: 6px;
+            }
+            & .row {
+              display: flex;
+            }
           }
         }
       }
     }
   }
+}
+
+#container-message-form {
+  position: relative;
+  & #message-form {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+  }
+}
+
+#vd-image {
+  width: 18.5rem;
+  height: 12.5rem;
+  background-size: cover;
 }
