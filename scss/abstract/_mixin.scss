@@ -1,0 +1,75 @@
+// Responsive Breakpoint Mixin
+// @mixin breakpoint($class) {
+//   @if $class == xs {
+//     @media (max-width: 575px) {
+//       @content;
+//     }
+//   } @else if $class == sm {
+//     @media (max-width: 767px) {
+//       @content;
+
+//     }
+//   } @else if $class == md {
+//     @media (max-width: 991px) {
+//       @content;
+//     }
+//   } @else if $class == lg {
+//     @media (max-width: 1199px) {
+//       @content;
+//     }
+//   } @else if $class == xl {
+//     @media (min-width: 1200px) {
+//       @content;
+//     }
+//   } @else {
+//     @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
+//   }
+// }
+//this code will change color of h1 depending of screen seize
+@media screen and (min-width: 320px) {
+  h1 {
+    color: red;
+  }
+  //this code will prepend the text with "320px"
+  h1:before {
+    content: "320px";
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    color: green;
+  }
+  h1:before {
+    content: "480px";
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    color: blue;
+  }
+  h1:before {
+    content: "768px";
+  }
+  #container-message-form {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    color: yellow;
+  }
+  h1:before {
+    content: "1024px";
+  }
+  #container-message-form {
+    padding-left: 5rem;
+  }
+}

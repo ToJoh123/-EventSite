@@ -1,0 +1,47 @@
+form {
+  & input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  & input[type="submit"] {
+    background-color: darkslategrey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  & input[type="submit"]:hover {
+    color: red;
+  }
+  & label {
+    padding: 12px 12px 12px 0;
+  }
+  & .col-13 {
+    width: 13rem;
+    margin-top: 6px;
+  }
+  & .col-10 {
+    width: 10rem;
+    margin-top: 6px;
+  }
+  & .col-30 {
+    width: 30rem;
+    margin-top: 6px;
+  }
+  & .col-40 {
+    width: 40rem;
+    margin-top: 6px;
+  }
+  & .row {
+    display: flex;
+  }
+}
+// about page

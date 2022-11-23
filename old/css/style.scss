@@ -45,91 +45,79 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  & body {
-    font-family: "Poppins", sans-serif;
-    & header {
-      background-color: #333;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
+}
 
-    & div {
-      display: flex;
+& body {
+  font-family: "Poppins", sans-serif;
+  & header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
 
-      & nav {
-        position: relative;
-        width: 10rem;
-        height: 100vh;
-        & ul {
-          position: fixed;
+  & div {
+    display: flex;
 
-          & li {
-            list-style: none;
-            & a {
-              text-decoration: none;
-              color: black;
-              display: block;
-              padding: 1rem;
-              &:hover {
-                color: #b61d1d;
-              }
+    & nav {
+      position: relative;
+      width: 10rem;
+      height: 100vh;
+      & ul {
+        position: fixed;
+
+        & li {
+          list-style: none;
+          & a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 1rem;
+            &:hover {
+              color: #b61d1d;
             }
           }
         }
       }
+    }
 
-      & main {
-        margin-left: 10rem;
+    & main {
+      margin-left: 10rem;
 
-        & .hero {
-          //this code will center the content
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-top: 1rem;
+      & .hero {
+        //this code will center the content
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
 
+        & img {
+          width: 75rem;
+          height: 18.5rem;
+          background-size: cover;
+        }
+        & img:hover {
+          opacity: 0.6;
+        }
+      }
+      & .articles {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
+        & article {
+          border: solid 2px white;
           & img {
-            width: 75rem;
-            height: 18.5rem;
+            width: 18.5rem;
+            height: 12.5rem;
             background-size: cover;
           }
-          & img:hover {
-            opacity: 0.6;
-          }
-        }
-        & .articles {
-          margin-top: 2rem;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-          grid-gap: 1rem;
-          & article {
-            border: solid 2px white;
-            & img {
-              width: 18.5rem;
-              height: 12.5rem;
-              background-size: cover;
-            }
-            & table {
-              text-align: left;
-              & th {
-                & button {
-                  text-align: center;
-                  font-weight: bold;
-                  border: none;
-                }
 
-                & button:focus {
-                  border: none;
-                  outline: none;
-                }
-
-                & button:focus {
-                  outline: none !important;
-                }
-              }
-            }
+          & article:hover {
+            background-color: blanchedalmond;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897);
+            transform: scale(1.1);
           }
         }
         & .detailed-article {

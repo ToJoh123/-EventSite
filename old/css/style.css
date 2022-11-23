@@ -94,7 +94,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 * body div main .articles article {
   border: solid 2px white;
@@ -107,17 +107,22 @@
 * body div main .articles article table {
   text-align: left;
 }
-* body div main .articles article table th button {
+* body div main .articles article table .toggle1 button {
   text-align: center;
   font-weight: bold;
   border: none;
 }
-* body div main .articles article table th button:focus {
+* body div main .articles article table .toggle1 button:focus {
   border: none;
-  outline: none;
+  outline: blue;
 }
-* body div main .articles article table th button:focus {
+* body div main .articles article table .toggle1 button:focus {
   outline: none !important;
+}
+* body div main .articles article:hover {
+  background-color: blanchedalmond;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897);
+  transform: scale(1.1);
 }
 * body div main .detailed-article h1 {
   font-size: xx-large;

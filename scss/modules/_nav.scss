@@ -1,0 +1,22 @@
+// Nav Styles
+nav {
+  position: relative;
+  width: 10rem;
+  height: 100vh;
+  & ul {
+    position: fixed;
+
+    & li {
+      list-style: none;
+      & a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 1rem;
+        &:hover {
+          color: #b61d1d;
+        }
+      }
+    }
+  }
+}

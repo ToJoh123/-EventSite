@@ -1,0 +1,22 @@
+/* 1. Configuration and helpers*/
+@use "abstract/mixin.scss";
+/* 2. Vendors*/
+
+/* 3. Modules*/
+@use "modules/forms.scss";
+@use "modules/nav.scss";
+@use "modules/table.scss";
+@use "modules/typography.scss";
+/* 4. Layout-related sections */
+@use "layout/root.scss";
+@use "layout/header.scss";
+@use "layout/container-nav-main.scss";
+@use "layout/main.scss";
+@use "layout/hero.scss";
+@use "layout/articles.scss";
+@use "layout/detailed-images.scss";
+/* 5. Components*/
+
+/* 6. Page-specific styles*/ //
+@use "pages/about.scss";
+/* 7. Overwritten Vendors */

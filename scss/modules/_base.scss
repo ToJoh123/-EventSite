@@ -1,0 +1,21 @@
+* {
+  transition: all 200ms ease-in-out;
+}
+
+:root {
+  font-size: 16px;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}

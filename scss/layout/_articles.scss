@@ -1,0 +1,21 @@
+.articles {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+  & article {
+    border: solid 2px white;
+    & img {
+      width: 18.5rem;
+      height: 12.5rem;
+      background-size: cover;
+    }
+
+    & article:hover {
+      background-color: blanchedalmond;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897);
+      transform: scale(1.1);
+    }
+  }
+}
