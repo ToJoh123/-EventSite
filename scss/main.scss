@@ -3,6 +3,8 @@
 /* 2. Vendors*/
 
 /* 3. Modules*/
+@use "modules/animation.scss";
+@use "modules/buttons.scss";
 @use "modules/forms.scss";
 @use "modules/nav.scss";
 @use "modules/table.scss";
