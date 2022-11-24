@@ -30,7 +30,6 @@
   h1 {
     color: red;
   }
-  //this code will prepend the text with "320px"
 }
 
 @media screen and (min-width: 480px) {
@@ -60,6 +59,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+  .hero {
+    width: 40rem;
+    height: 15.5rem;
+    border: solid 2px black;
+    //this will hide the elements that are not needed on smaller screens
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -73,5 +78,10 @@
   .articles {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+  .hero {
+    width: 60rem;
+    height: 18.5rem;
+    border: solid 2px black;
   }
 }

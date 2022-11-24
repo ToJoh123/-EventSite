@@ -1,7 +1,7 @@
 .articles {
   margin-top: 2rem;
   display: grid;
-  grid-gap: 2rem;
+  gap: 2rem;
 
   & article {
     border: solid 2px white;
