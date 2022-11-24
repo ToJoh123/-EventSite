@@ -1,20 +1,25 @@
+@import "../abstract/variables.scss";
 // Nav Styles
 nav {
   position: relative;
   width: 10rem;
   height: 100vh;
+
   & ul {
     position: fixed;
 
     & li {
       list-style: none;
       & a {
+        font-size: larger;
+        //this will make text bold
+        font-weight: bold;
+        color: $color-secondary;
         text-decoration: none;
-        color: black;
         display: block;
         padding: 1rem;
         &:hover {
-          color: #b61d1d;
+          color: $color-primary;
         }
       }
     }

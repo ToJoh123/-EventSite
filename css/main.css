@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=latin-ext,cyrillic.css";
 @media screen and (min-width: 320px) {
   h1 {
     color: red;
@@ -133,13 +134,15 @@ nav ul li {
   list-style: none;
 }
 nav ul li a {
+  font-size: larger;
+  font-weight: bold;
+  color: #690369;
   text-decoration: none;
-  color: black;
   display: block;
   padding: 1rem;
 }
 nav ul li a:hover {
-  color: #b61d1d;
+  color: #004000;
 }
 
 table {
@@ -216,6 +219,7 @@ main {
 }
 
 .hero {
+  border-top: none;
   position: relative;
   background-image: url("../img/pexels-ylanite-koppens-796607.jpg");
   background-size: cover;
@@ -231,22 +235,21 @@ main {
   background: conic-gradient(at 50% 50%, transparent 135deg, green 0, green 225deg, transparent 0);
   z-index: 1;
 }
-.hero p {
-  position: absolute;
-  bottom: 1rem;
-  right: 0;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
 .hero h3 {
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  z-index: 1;
+  padding-top: 10rem;
+  margin-top: 10rem;
+  bottom: 0;
   padding: 0.5rem;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+}
+
+.hero-article {
+  background-color: #690369;
+  padding: 1rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
 }
 
