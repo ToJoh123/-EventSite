@@ -31,17 +31,11 @@
     color: red;
   }
   //this code will prepend the text with "320px"
-  h1:before {
-    content: "320px";
-  }
 }
 
 @media screen and (min-width: 480px) {
   h1 {
     color: green;
-  }
-  h1:before {
-    content: "480px";
   }
 }
 @media screen and (max-width: 600px) {
@@ -54,9 +48,7 @@
   h1 {
     color: blue;
   }
-  h1:before {
-    content: "768px";
-  }
+
   #container-message-form {
     padding-left: 3rem;
   }
@@ -66,9 +58,7 @@
   h1 {
     color: yellow;
   }
-  h1:before {
-    content: "1024px";
-  }
+
   #container-message-form {
     padding-left: 5rem;
   }

@@ -3,3 +3,54 @@
     font-size: xxx-large;
   }
 }
+
+.about-company {
+  article {
+    h2 {
+      margin-top: 1rem;
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    & p {
+      margin-top: 1rem;
+      border-top: solid 1px #000;
+      font-size: x-large;
+    }
+  }
+}
+#checkmark {
+  position: absolute;
+}
+#vetted:hover {
+  //this will append a heart to the text
+  &::after {
+    content: "✅";
+  }
+}
+
+#authentic:hover {
+  //this will append a heart to the text
+  // &::after {
+  //   content: " 💗";
+  // }
+
+  //this will animate a heart to the text
+  @keyframes identifier {
+    0% {
+      content: " 💗";
+    }
+    50% {
+      content: " 💖";
+    }
+    100% {
+      content: " 💗";
+    }
+  }
+  &::after {
+    content: " 💗";
+    animation: identifier 1s infinite;
+  }
+}
