@@ -1,3 +1,8 @@
 button {
   border: none;
+  border-radius: 0.5rem;
+}
+button:hover {
+  cursor: pointer;
+  color: red;
 }

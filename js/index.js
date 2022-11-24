@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // addArticles();
-
+  $("#thank-you-contact").hide();
   loadData();
 
   //async hade fungerat
@@ -8,9 +8,16 @@ $(document).ready(function () {
   async function loadData() {
     const response = await fetch("../data/data.json");
     const data = await response.json();
-    //parse the json data
-    console.log(data.events);
-    addArticles(data.events);
+    const events = data.events;
+    const featured = [];
+    //this code will loop through the data and add the and add the data to a featured array
+    for (let i = 0; i < events.length; i++) {
+      if (events[i].featured === true) {
+        featured.push(events[i]);
+      }
+    }
+    console.log(featured);
+    addArticles(featured);
     hideText();
   }
 
@@ -66,29 +73,10 @@ $(document).ready(function () {
       }
     });
   }
-
-  //this is to add click effect to the table
-
   //this function will hide the text if it has classname of hidden
   function hideText() {
     $(".hidden").hide();
   }
-  //this function will show the text if it has classname of hidden
-  $("#thank-you").hide();
-  $("#thank-you-contact").hide();
-
-  $("#create-event").click(function () {
-    //this will hide the id event-form-container and replace it with a thank you message
-    $("#create-event-form").hide(1000);
-    $("#thank-you").show(1000);
-
-    // this will uppdate page after 5 seconds
-    setTimeout(function () {
-      location.reload();
-    }, 5000);
-    return false;
-  }); //end of create-event click function
-
   $("#send-message-btn").click(function () {
     $("#message-form").hide(1000);
     $("#thank-you-contact").show(1000);

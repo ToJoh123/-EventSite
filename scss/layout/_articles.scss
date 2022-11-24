@@ -1,15 +1,15 @@
 .articles {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
+
   & article {
     border: solid 2px white;
+
     & img {
       width: 18.5rem;
       height: 12.5rem;
-      background-size: cover;
+      object-fit: cover;
     }
 
     & article:hover {

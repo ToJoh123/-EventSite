@@ -6,11 +6,9 @@
   margin-top: 2rem;
 }
 #vd-image {
-  border: solid gold 2px;
-  transition: 0.3s;
+  border: solid 1px gold;
   width: 12.5rem;
   height: 18.5rem;
-  background-size: cover;
 }
 .about-company {
   article {
@@ -26,6 +24,12 @@
     margin: 0; /*reset margin of figure tag*/
     & img {
       //this will make the image round
+      border-style: solid;
+      border-image-slice: 27 27 27 27;
+      border-image-width: 20px 20px 20px 20px;
+      border-image-outset: 0px 0px 0px 0px;
+      border-image-repeat: stretch stretch;
+      border-image-source: url("https://img.freepik.com/free-photo/wooden-textured-background_53876-14865.jpg?w=1380&t=st=1669295693~exp=1669296293~hmac=7fa3b9a845fd423371c3585eecf2ff1b48f78807a7491f04394435926c24e0df");
       border-radius: 10%;
       width: 18.5rem;
       height: 18.5rem;
@@ -33,4 +37,7 @@
       transition: 0.3s;
     }
   }
+}
+.row {
+  display: flex;
 }

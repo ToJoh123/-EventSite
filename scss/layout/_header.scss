@@ -1,5 +1,6 @@
+@import "../abstract/variables.scss";
 header {
-  background-color: #004000;
+  background-color: $color-primary;
   color: #fff;
   padding: 1rem;
   text-align: center;

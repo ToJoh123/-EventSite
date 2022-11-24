@@ -1,3 +1,7 @@
+@import "../abstract/variables.scss";
+body {
+  font-family: $font-opensans;
+}
 .detailed-article {
   & h1 {
     font-size: xxx-large;

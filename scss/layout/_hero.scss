@@ -1,11 +1,12 @@
+@import "../abstract/variables.scss";
 .hero {
-  //this code will center the content
-  border-radius: 0 - 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
   position: relative;
+  width: 75rem;
+  height: 18.5rem;
   & h2 {
     position: absolute;
     top: 1rem;
@@ -32,7 +33,8 @@
     right: 25;
     z-index: 1;
     //this give transperance to the background so the text is readable
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
     padding: 1rem;
   }
 
@@ -42,7 +44,7 @@
     left: 1rem;
     z-index: 1;
     padding: 0.5rem;
-    background-color: #004000;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 0.5rem;
   }
 

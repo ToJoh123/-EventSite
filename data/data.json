@@ -3,50 +3,56 @@
     {
       "name": "Air force jam",
       "date": "1 jan 2020",
-      "short_desc": "this party is for short shoes unless you have tall ones.",
-      "category": "sneakers",
+      "short_desc": "come and jam with us, we are the best",
+      "category": "Music",
       "link": "details.html",
-      "image": "https://picsum.photos/200"
+      "image": "../img/pexels-chad-kirchoff-952422.jpg",
+      "featured": true
     },
     {
-      "name": "blockfeet party",
-      "date": "1 jan 2020",
-      "short_desc": "this party is for crypto shoes,bring your blockfeet",
-      "category": "sneakers",
+      "name": "Snow walk meetup",
+      "date": "2 feb 2021",
+      "short_desc": "Bring your friends and join us for a long walk in the snow",
+      "category": "Walking",
       "link": "details.html",
-      "image": "https://picsum.photos/200"
+      "image": "../img/pexels-dmytro-kormylets-10841960.jpg",
+      "featured": true
     },
     {
-      "name": "Ground force jammed",
-      "date": "1 jan 2020",
-      "short_desc": "if youre not wearing shoes you cant come",
-      "category": "shoeless",
-      "link": "details.html",
-      "image": "https://picsum.photos/200"
+      "name": "Easter egg hunt",
+      "date": "18 mars 2023",
+      "short_desc": "bring your best hunting gear and join us for a hunt",
+      "category": "Hunting",
+      "link": "Holiday",
+      "image": "../img/pexels-photo-6620071.jpeg",
+      "featured": true
     },
     {
-      "name": "vs code party",
-      "date": "1 jan 2020",
-      "short_desc": " this event is for all who dont know what shoes are",
-      "category": "code",
+      "name": "Mittens birthday party",
+      "date": "24 mars 2023",
+      "short_desc": "Hey its my birthday soon and i want to celebrate with you",
+      "category": "Birthday",
       "link": "details.html",
-      "image": "https://picsum.photos/200"
+      "image": "../img/pexels-photo-14356302.jpeg",
+      "featured": true
     },
     {
-      "name": "shoelace party",
-      "date": "1 jan 2050",
-      "short_desc": "this party is for all who have shoelaces",
-      "category": "shoelaces",
+      "name": "Shoelace party",
+      "date": "17 aprill 2023",
+      "short_desc": "i found this shoe in the snow, come and join me in finding the owner, dirty humans are not welcome",
+      "category": "Hunting",
       "link": "details.html",
-      "image": "https://picsum.photos/200"
+      "image": "../img/dog_flower.jpg",
+      "featured": true
     },
     {
-      "name": "sole party",
-      "date": "1 jan 2040",
-      "short_desc": "this party is for all who have soles",
-      "category": "soles",
+      "name": "Selfies 😀",
+      "date": "6 jun 2023",
+      "short_desc": "lets take fun selfies together, i has cheeseburgers 🧀",
+      "category": "Party",
       "link": "details.html",
-      "image": "https://www.kia.com/content/dam/kwcms/kme/global/en/assets/vehicles/e-Soul/specfication/kia-e-soul-my19-slide-list-01-w.png"
+      "image": "../img/cat_close_up.jpg",
+      "featured": true
     },
     {
       "name": "javascript party",
