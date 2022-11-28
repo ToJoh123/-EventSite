@@ -2,6 +2,8 @@
 
 Individuell Inlämningsuppgift
 
+länk till sida https://tojoh123.github.io/-EventSite/
+
 # Individuell Inlämningsuppgift
 
 För G krävs att man löser alla punkter nedan utom VG punkterna
