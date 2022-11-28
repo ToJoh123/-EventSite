@@ -6,7 +6,7 @@
       "short_desc": "come and jam with us, we are the best",
       "category": "Music",
       "link": "details.html",
-      "image": "../img/pexels-chad-kirchoff-952422.jpg",
+      "image": "img/pexels-chad-kirchoff-952422.jpg",
       "featured": true
     },
     {
@@ -15,7 +15,7 @@
       "short_desc": "Bring your friends and join us for a long walk in the snow",
       "category": "Walking",
       "link": "details.html",
-      "image": "../img/pexels-dmytro-kormylets-10841960.jpg",
+      "image": "img/pexels-dmytro-kormylets-10841960.jpg",
       "featured": true
     },
     {
@@ -24,7 +24,7 @@
       "short_desc": "bring your best hunting gear and join us for a hunt",
       "category": "Hunting",
       "link": "Holiday",
-      "image": "../img/pexels-photo-6620071.jpeg",
+      "image": "img/pexels-photo-6620071.jpeg",
       "featured": true
     },
     {
@@ -33,7 +33,7 @@
       "short_desc": "Hey its my birthday soon and i want to celebrate with you",
       "category": "Birthday",
       "link": "details.html",
-      "image": "../img/pexels-photo-14356302.jpeg",
+      "image": "img/pexels-photo-14356302.jpeg",
       "featured": true
     },
     {
@@ -42,7 +42,7 @@
       "short_desc": "i found this shoe in the snow, come and join me in finding the owner, dirty humans are not welcome",
       "category": "Hunting",
       "link": "details.html",
-      "image": "../img/dog_flower.jpg",
+      "image": "img/dog_flower.jpg",
       "featured": true
     },
     {
@@ -51,7 +51,7 @@
       "short_desc": "lets take fun selfies together, i has cheeseburgers 🧀",
       "category": "Party",
       "link": "details.html",
-      "image": "../img/cat_close_up.jpg",
+      "image": "img/cat_close_up.jpg",
       "featured": true
     },
     {

@@ -6,7 +6,7 @@ $(document).ready(function () {
   //async hade fungerat
   //then catch
   async function loadData() {
-    const response = await fetch("../data/data.json");
+    const response = await fetch("data/data.json");
     const data = await response.json();
     //parse the json data
     console.log(data.events);
